@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hexstrike-logo.png" alt="HexStrike AI Logo" width="220" style="margin-bottom: 20px;"/>
+<img src="hexstrike-ai-kit.png" alt="HexStrike AI Kit Logo" width="220" style="margin-bottom: 20px;"/>
 
 </div>
 
@@ -14,7 +14,7 @@
 ---
 
 ## 🌟 One-sentence pitch
-HexStrike AI Kit is the **containerized distribution** of [hexstrike-ai](https://github.com/<upstream>/hexstrike-ai):  
+HexStrike AI Kit is the **containerized distribution** of [hexstrike-ai](https://github.com/0x4m4/hexstrike-ai):  
 - code + environment + dependencies + utilities are baked into a single Dockerfile.  
 - **Clone → build → run** and you instantly get a bit-for-bit reproducible environment that keeps itself in-sync with upstream.  
 - A web UI, job storage and more batteries-included features are already on the roadmap.
@@ -24,7 +24,7 @@ HexStrike AI Kit is the **containerized distribution** of [hexstrike-ai](https:/
 ## 🚀 Quick start
 1. Clone (SSH is faster)
    ```bash
-   git clone git@github.com:<your-namespace>/hexstrike-ai-kit.git
+   git clone git@github.com:bayuncao/hexstrike-ai-kit.git
    cd hexstrike-ai-kit
    ```
 
@@ -93,7 +93,7 @@ All code is auto-formatted and unit-tested via pre-commit; contributions are und
 
 ## 📄 License
 MIT © HexStrike AI Kit  
-Upstream license follows [hexstrike-ai](https://github.com/0x4m4/hexstrike-ai/blob/main/LICENSE).
+Upstream license follows [hexstrike-ai](https://github.com/0x4m4/hexstrike-ai/blob/master/README.md).
 
 ---
 
