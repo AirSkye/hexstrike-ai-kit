@@ -21,6 +21,51 @@ HexStrike AI Kit is the **containerized distribution** of [hexstrike-ai](https:/
 
 ---
 
+## 📥 Pull Pre-built Image from GHCR (Alternative to Local Build)
+To save time on local image building, you can directly pull the official pre-built image from GitHub Container Registry (GHCR). We provide region-optimized addresses for faster access:
+
+
+### 1. GHCR Pull Addresses
+| User Region       | GHCR Pull Address                              | Description                                                                 |
+|--------------------|------------------------------------------------|-----------------------------------------------------------------------------|
+| Global (International) | `ghcr.io/airskye/hexstrike-ai-kit:latest`     | Default address for users outside Mainland China, with global CDN support. |
+| Mainland China     | `ghcr.nju.edu.cn/airskye/hexstrike-ai-kit:latest` | Mirrored address for users in Mainland China, optimized for local network speed. |
+
+### 2. Pull & Run Commands
+Skip the **Build** step in the "Quick Start" section, and use the commands below to pull the image and run the container directly.
+
+#### For Global Users:
+```bash
+# Pull the image from official GHCR
+docker pull ghcr.io/airskye/hexstrike-ai-kit:latest
+
+
+# Run the container (replace the image name with the GHCR address)
+docker run --rm -it \
+  -p 8888:8888 \
+  -e HEXSTRIKE_HOST=0.0.0.0 \
+  -e HEXSTRIKE_PORT=8888 \
+  -e DEBUG_MODE=0 \
+  ghcr.io/airskye/hexstrike-ai-kit:latest
+```
+
+#### For Mainland China Users:
+```bash
+# Pull the image from the mirrored GHCR
+docker pull ghcr.nju.edu.cn/airskye/hexstrike-ai-kit:latest
+
+
+# Run the container (replace the image name with the mirrored address)
+docker run --rm -it \
+  -p 8888:8888 \
+  -e HEXSTRIKE_HOST=0.0.0.0 \
+  -e HEXSTRIKE_PORT=8888 \
+  -e DEBUG_MODE=0 \
+  ghcr.nju.edu.cn/airskye/hexstrike-ai-kit:latest
+```
+
+---
+
 ## 🚀 Quick start
 1. Clone (SSH is faster)
    ```bash
